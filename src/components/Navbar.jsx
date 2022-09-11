@@ -13,6 +13,7 @@ const Navbar = () => (
       background: "#222",
       top: "0",
       gap: 5,
+      zIndex: 2,
     }}
   >
     <Link

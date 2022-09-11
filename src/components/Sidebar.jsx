@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { categories } from "../utils/constants";
 
 const Sidebar = ({ selectedCategory, setselectedCategory }) => {
@@ -9,6 +9,9 @@ const Sidebar = ({ selectedCategory, setselectedCategory }) => {
         overflowY: "auto",
         height: { sx: "auto", md: "95%" },
         flexDirection: { md: "column" },
+        position: "relative",
+        bottom: 0,
+        zIndex: 1,
       }}
     >
       {categories.map((category) => (
@@ -36,6 +39,13 @@ const Sidebar = ({ selectedCategory, setselectedCategory }) => {
           </span>
         </button>
       ))}
+      <Typography
+        className="copyright"
+        variant="body2"
+        sx={{ mt: 1.5, color: "#fff" }}
+      >
+        Copyright 2022 Q-tube
+      </Typography>
     </Stack>
   );
 };

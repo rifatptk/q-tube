@@ -28,13 +28,6 @@ const Feed = () => {
           selectedCategory={selectedCategory}
           setselectedCategory={setselectedCategory}
         />
-        <Typography
-          className="copyright"
-          variant="body2"
-          sx={{ mt: 1.5, color: "#fff" }}
-        >
-          Copyright 2022 Q-tube
-        </Typography>
       </Box>
       <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
         <Typography
