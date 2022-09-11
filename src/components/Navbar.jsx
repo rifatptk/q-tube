@@ -10,10 +10,9 @@ const Navbar = () => (
     p={2}
     sx={{
       position: "sticky",
-      background: "#000",
+      background: "#222",
       top: "0",
-      justifyContent: "space-between",
-      borderBottom: "1px solid gray",
+      gap: 5,
     }}
   >
     <Link
@@ -21,7 +20,9 @@ const Navbar = () => (
       style={{ display: "flex", alignItems: "center", color: "white" }}
     >
       <img src={logo} alt="q-tube" height={45} />
-      <Typography sx={{ ml: 2, fontWeight: "bold" }}>Q-tube</Typography>
+      <Typography variant="h5" sx={{ ml: 2 }}>
+        Q-tube
+      </Typography>
     </Link>
     <SearchBar />
   </Stack>
