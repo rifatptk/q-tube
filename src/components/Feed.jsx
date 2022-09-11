@@ -19,8 +19,9 @@ const Feed = () => {
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
-          borderRight: "1px solid #3d3d3d",
-          px: { sx: 0, md: 2 },
+          // borderRight: "1px solid #3d3d3d",
+          px: { sx: 0, md: 3 },
+          background: "#111",
         }}
       >
         <Sidebar
