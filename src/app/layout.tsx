@@ -18,9 +18,9 @@ export default function RootLayout({
         <div className="h-screen flex flex-col">
           <TopNavigation />
 
-          <div className="border-4 border-blue-500 flex-1 flex">
+          <div className="flex-1 flex">
             <SideNavigation />
-            <main className="border-4 border-green-500 flex-1">{children}</main>
+            <main className="border border-green-500 flex-1">{children}</main>
           </div>
         </div>
       </body>
