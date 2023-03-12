@@ -1,6 +1,6 @@
 import "./globals.css";
-import SideNavigation from "./SideNavigation";
-import TopNavigation from "./TopNavigation";
+import SideNavigation from "../components/SideNavigation";
+import TopNavigation from "@/components/TopNavigation";
 
 export const metadata = {
   title: "Q-Tube",
@@ -20,7 +20,7 @@ export default function RootLayout({
 
           <div className="flex-1 flex">
             <SideNavigation />
-            <main className="border border-green-500 flex-1">{children}</main>
+            <main className="flex-1">{children}</main>
           </div>
         </div>
       </body>
